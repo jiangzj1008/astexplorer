@@ -36,15 +36,15 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-      - run: ls
-      - run: cd website
-      - run: ls
-      - run: yarn
-      - run: yarn build
-      - run: ls
-      - run: cd ../
-      - run: ls
-      - run:  |
+      - name: Build
+        working-directory: ./website
+        run: |
+          ls
+          yarn
+          yarn build
+      - name: Upload
+        run: |
+          ls
           tar \
             --directory "out" \
             -cvf "$RUNNER_TEMP/artifact.tar" \
