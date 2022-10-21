@@ -27,7 +27,7 @@ jobs:
     
     strategy:
       matrix:
-        node-version: [14.x, 15.x]
+        node-version: [14.x]
 
     steps:
       - name: Checkout
@@ -38,12 +38,10 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - run: cd ./website
       - run: yarn
-      - name: Build
-        run: yarn build
+      - run: yarn build
       - run: cd ../
       - run: ls
-      - name: Archive artifact
-        run:  |
+      - run:  |
           tar \
             --directory "out" \
             -cvf "$RUNNER_TEMP/artifact.tar" \
