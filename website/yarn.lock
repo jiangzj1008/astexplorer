@@ -1239,6 +1239,13 @@
   dependencies:
     "@simple-dom/interface" "^1.4.0"
 
+"@glimmer/interfaces@0.84.2":
+  version "0.84.2"
+  resolved "https://registry.npmjs.org/@glimmer/interfaces/-/interfaces-0.84.2.tgz#764cf92c954adcd1a851e5dc68ec1f6b654dc3bd"
+  integrity sha512-tMZxQpOddUVmHEOuripkNqVR7ba0K4doiYnFd4WyswqoHPlxqpBujbIamQ+bWCWEF0U4yxsXKa31ekS/JHkiBQ==
+  dependencies:
+    "@simple-dom/interface" "^1.4.0"
+
 "@glimmer/reference@^0.83.1":
   version "0.83.1"
   resolved "https://registry.yarnpkg.com/@glimmer/reference/-/reference-0.83.1.tgz#0345b95431b5bb19843b308e6311d1ef81e36192"
@@ -1267,6 +1274,15 @@
   dependencies:
     "@glimmer/env" "0.1.7"
     "@glimmer/interfaces" "0.83.1"
+    "@simple-dom/interface" "^1.4.0"
+
+"@glimmer/util@0.84.2":
+  version "0.84.2"
+  resolved "https://registry.npmjs.org/@glimmer/util/-/util-0.84.2.tgz#2711ba40f25f44b2ea309cad49f5c2622c6211bc"
+  integrity sha512-VbhzE2s4rmU+qJF3gGBTL1IDjq+/G2Th51XErS8MQVMCmE4CU2pdwSzec8PyOowqCGUOrVIWuMzEI6VoPM4L4w==
+  dependencies:
+    "@glimmer/env" "0.1.7"
+    "@glimmer/interfaces" "0.84.2"
     "@simple-dom/interface" "^1.4.0"
 
 "@glimmer/validator@0.83.1", "@glimmer/validator@^0.83.0":
@@ -7140,6 +7156,16 @@ lcid@^2.0.0:
   integrity sha512-avPEb8P8EGnwXKClwsNUgryVjllcRqtMYa49NTsbQagYuT1DcXnl1915oxWjoyGrXR6zH/Y0Zc96xWsPcoDKeA==
   dependencies:
     invert-kv "^2.0.0"
+
+lehbs-parser@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.npmjs.org/lehbs-parser/-/lehbs-parser-0.0.2.tgz#5bdc364a1b90f57268fb06072bda5a97a525120f"
+  integrity sha512-08Xjwp8imnn11w1Y2hyRXiBMvaLfnM9pQuounL/5Utjy3r6731H0ZMBWsmA2lwLGvfMHAdSP2tj7vvp+ms0c4w==
+  dependencies:
+    "@glimmer/interfaces" "0.84.2"
+    "@glimmer/util" "0.84.2"
+    "@handlebars/parser" "~2.0.0"
+    simple-html-tokenizer "^0.5.11"
 
 leven@^1.0.2:
   version "1.0.2"
